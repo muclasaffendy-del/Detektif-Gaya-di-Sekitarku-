@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petualangan Mengenal Gaya — IPA Kelas 4</title>
+<style>
+:root{--navy:#17324d;--blue:#2878b8;--sky:#eaf6ff;--yellow:#ffd166;--coral:#ef7868;--green:#3a9d78;--ink:#203040;--muted:#627386;--paper:#fff;--line:#dce7ef}
+*{box-sizing:border-box}body{margin:0;background:#f3f8fc;color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+header{background:linear-gradient(125deg,#17324d,#2878b8);color:white;padding:28px 18px 34px}
+.hero{max-width:1000px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:800;color:#bfe6ff}
+h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.08;margin:9px 0}.hero p{max-width:680px;color:#e8f5ff;margin:10px 0 0}
+.pill{display:inline-block;background:#ffffff22;border:1px solid #ffffff55;border-radius:99px;padding:5px 12px;font-size:.85rem;margin:12px 6px 0 0}
+nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:9px 12px;display:flex;gap:8px;overflow-x:auto;justify-content:center}
+nav a{white-space:nowrap;text-decoration:none;color:var(--navy);font-size:.88rem;font-weight:750;padding:8px 12px;border-radius:99px}nav a:hover{background:var(--sky)}
+main{max-width:1000px;margin:24px auto;padding:0 16px 55px}
+section{scroll-margin-top:76px;margin:22px 0;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 8px 25px #17324d0a}
+h2{color:var(--navy);font-size:1.45rem;margin:0 0 8px}h3{color:var(--navy);margin:8px 0}
+.sub{color:var(--muted);margin:0 0 16px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:13px}
+.card{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff}
+.icon{font-size:2.5rem;line-height:1.2}.tag{display:inline-block;font-size:.75rem;font-weight:800;background:var(--sky);color:#1d5b89;border-radius:99px;padding:3px 9px}
+.callout{background:#fff7df;border-left:5px solid var(--yellow);padding:13px 15px;border-radius:10px;margin:13px 0}
+.bluebox{background:var(--sky);padding:14px;border-radius:12px}.question{font-weight:750;margin:10px 0}
+button{border:0;border-radius:11px;background:var(--blue);color:#fff;padding:10px 15px;font-weight:750;cursor:pointer;font-size:.95rem}
+button:hover{filter:brightness(.94)}button.secondary{background:#e8f1f8;color:var(--navy)}button.good{background:var(--green)}
+button:focus-visible,a:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.options{display:grid;gap:8px;margin:10px 0}.options button{text-align:left;background:#f0f6fb;color:var(--ink);border:1px solid var(--line)}.options button.selected{border:2px solid var(--blue);background:#e4f3ff}
+.feedback{margin-top:10px;padding:11px;border-radius:10px;display:none}.feedback.show{display:block}.feedback.ok{background:#e6f6ee;color:#176342}.feedback.no{background:#fff0e9;color:#8b3c28}
+.progress{height:9px;background:#e6eef4;border-radius:20px;overflow:hidden;margin:12px 0}.progress span{display:block;height:100%;width:0;background:var(--green);transition:width .25s}
+.step{display:flex;gap:12px;align-items:flex-start}.num{flex:0 0 34px;height:34px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;font-weight:900;color:#654900}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
+.small{font-size:.9rem;color:var(--muted)}.score{font-weight:850;color:var(--green);font-size:1.1rem}
+@media(max-width:600px){section{padding:17px}.hero{padding:0 5px}nav{justify-content:flex-start}}
+@media print{nav,button{display:none!important}body{background:white}section{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<header>
+ <div class="hero">
+  <div class="eyebrow">Media Pembelajaran Interaktif • IPA Kelas 4</div>
+  <h1>Petualangan<br>Mengenal Gaya! 🚀</h1>
+  <p>Ayo jadi detektif sains! Temukan berbagai jenis gaya melalui kejadian yang sering kamu jumpai di rumah dan sekolah.</p>
+  <span class="pill">⏱️ 35–45 menit</span><span class="pill">🎯 Kenali 6 jenis gaya</span><span class="pill">🧩 Belajar sambil mencoba</span>
+ </div>
+</header>
+<nav>
+ <a href="#pemantik">Pemantik</a><a href="#materi">Jelajah Materi</a><a href="#game">Mini-game</a><a href="#kuis">Kuis</a><a href="#tantangan">Tantangan</a>
+</nav>
+<main>
+<section id="pemantik">
+ <span class="tag">1 • Apersepsi | 5–10 menit</span>
+ <h2>Misi Detektif Gaya 🔎</h2>
+ <p class="sub">Baca cerita berikut, lalu diskusikan bersama teman.</p>
+ <div class="bluebox">
+  <p><b>Pagi di sekolah.</b> Rani mendorong pintu kelas hingga terbuka. Bimo menendang bola di halaman. Bola yang menggelinding akhirnya berhenti. Saat istirahat, sebuah klip kertas menempel pada magnet. Daun kering jatuh dari pohon ke tanah.</p>
+  <p><b>Pertanyaan pemantik:</b> Apa yang membuat benda-benda itu bergerak, berubah arah, berhenti, atau tertarik?</p>
+ </div>
+ <div class="question">Pilih jawabanmu: gaya paling tepat diartikan sebagai …</div>
+ <div class="options" id="warmOptions">
+  <button onclick="warm(0)">A. Hiasan yang menempel pada benda</button>
+  <button onclick="warm(1)">B. Tarikan atau dorongan yang dapat memengaruhi gerak/bentuk benda</button>
+  <button onclick="warm(2)">C. Suara yang dihasilkan benda</button>
+ </div>
+ <div class="feedback" id="warmFeedback" aria-live="polite"></div>
+ <p class="small">Ajak murid memperagakan gerakan mendorong meja dengan aman (tanpa memindahkan meja), menarik tas, dan menepuk bola.</p>
+</section>
+
+<section id="materi">
+ <span class="tag">2 • Micro-learning | 15–20 menit</span>
+ <h2>Jelajahi 6 Jenis Gaya</h2>
+ <p class="sub">Baca contoh, amati ilustrasi, lalu tekan tombol “Coba jawab” pada setiap kartu.</p>
+ <div class="grid">
+  <article class="card">
+   <div class="icon">💪</div><h3>1. Gaya otot</h3>
+   <p>Gaya yang dihasilkan oleh kerja otot manusia atau hewan.</p>
+   <p><b>Contoh:</b> mendorong meja, mengangkat tas, menarik gerobak.</p>
+   <button class="secondary" onclick="reveal('otot')">Coba jawab</button><div class="feedback" id="otot">Saat kamu menarik kursi, otot tangan bekerja. Itulah gaya otot!</div>
+  </article>
+  <article class="card">
+   <div class="icon">🧲</div><h3>2. Gaya magnet</h3>
+   <p>Gaya tarik atau tolak yang ditimbulkan magnet pada benda tertentu.</p>
+   <p><b>Contoh:</b> magnet menarik klip kertas dari besi.</p>
+   <button class="secondary" onclick="reveal('magnet')">Coba jawab</button><div class="feedback" id="magnet">Klip berbahan besi dapat ditarik magnet. Tidak semua logam tertarik magnet.</div>
+  </article>
+  <article class="card">
+   <div class="icon">🍂</div><h3>3. Gaya gravitasi</h3>
+   <p>Gaya tarik bumi yang membuat benda jatuh ke arah bumi.</p>
+   <p><b>Contoh:</b> buah jatuh dari pohon, bola yang dilempar ke atas kembali turun.</p>
+   <button class="secondary" onclick="reveal('gravitasi')">Coba jawab</button><div class="feedback" id="gravitasi">Benda kembali jatuh karena tarikan gravitasi bumi.</div>
+  </article>
+  <article class="card">
+   <div class="icon">🛝</div><h3>4. Gaya gesek</h3>
+   <p>Gaya yang muncul ketika dua permukaan bersentuhan dan menghambat gerak.</p>
+   <p><b>Contoh:</b> rem sepeda membantu roda berhenti; sepatu tidak mudah tergelincir di lantai kasar.</p>
+   <button class="secondary" onclick="reveal('gesek')">Coba jawab</button><div class="feedback" id="gesek">Gesekan antara rem dan roda membantu memperlambat sepeda.</div>
+  </article>
+  <article class="card">
+   <div class="icon">🌀</div><h3>5. Gaya pegas</h3>
+   <p>Gaya yang dihasilkan benda elastis ketika diregangkan atau ditekan, lalu berusaha kembali ke bentuk semula.</p>
+   <p><b>Contoh:</b> pegas pada pulpen tekan atau ketapel mainan.</p>
+   <button class="secondary" onclick="reveal('pegas')">Coba jawab</button><div class="feedback" id="pegas">Pegas pulpen tertekan lalu mendorong mekanisme pulpen kembali.</div>
+  </article>
+  <article class="card">
+   <div class="icon">⚡</div><h3>6. Gaya listrik</h3>
+   <p>Gaya tarik atau tolak yang berkaitan dengan muatan listrik.</p>
+   <p><b>Contoh:</b> penggaris plastik yang digosok rambut dapat menarik potongan kertas kecil.</p>
+   <button class="secondary" onclick="reveal('listrik')">Coba jawab</button><div class="feedback" id="listrik">Setelah digosok, penggaris dapat memiliki muatan listrik statis dan menarik kertas kecil.</div>
+  </article>
+ </div>
+ <div class="callout"><b>Ingat!</b> Gaya dapat membuat benda diam menjadi bergerak, mengubah arah atau kecepatan gerak, menghentikan gerak, dan mengubah bentuk benda.</div>
+</section>
+
+<section id="game">
+ <span class="tag">3 • Partisipasi aktif | 5 menit</span>
+ <h2>Mini-game: Pasangkan Peristiwanya! 🎮</h2>
+ <p class="sub">Pilih jenis gaya yang sesuai dengan peristiwa. Dapatkan satu poin untuk setiap jawaban benar.</p>
+ <div class="card">
+  <div class="score" id="gameScore">Skor: 0 / 4</div>
+  <div class="progress"><span id="gameProgress"></span></div>
+  <div id="gameArea"></div>
+  <div class="feedback" id="gameFeedback" aria-live="polite"></div>
+  <button id="nextGame" onclick="nextGame()" style="display:none;margin-top:10px">Peristiwa berikutnya →</button>
+ </div>
+</section>
+
+<section id="kuis">
+ <span class="tag">4 • Asesmen formatif | 5–8 menit</span>
+ <h2>Uji Pemahamanmu 🧠</h2>
+ <p class="sub">Jawab 5 soal berikut. Baca pembahasan setelah memilih jawaban.</p>
+ <div class="card">
+  <div class="score" id="quizCount">Soal 1 dari 5</div>
+  <div class="progress"><span id="quizProgress"></span></div>
+  <div id="quizArea"></div>
+  <div class="feedback" id="quizFeedback" aria-live="polite"></div>
+  <button id="nextQuiz" onclick="nextQuiz()" style="display:none;margin-top:10px">Soal berikutnya →</button>
+  <div id="quizResult" class="bluebox" style="display:none;margin-top:12px"></div>
+ </div>
+</section>
+
+<section id="tantangan">
+ <span class="tag">5 • Tantangan tindak lanjut | 5 menit + pengamatan</span>
+ <h2>Detektif Gaya di Sekitarku 🏡</h2>
+ <p class="sub">Ajak murid mengamati lingkungan rumah atau sekolah bersama guru/orang tua.</p>
+ <div class="step"><div class="num">1</div><div>Temukan <b>tiga peristiwa</b> yang menunjukkan adanya gaya, misalnya membuka pintu, bola berhenti, atau magnet menempel pada papan.</div></div>
+ <div class="step"><div class="num">2</div><div>Catat nama peristiwanya dan jenis gaya yang bekerja.</div></div>
+ <div class="step"><div class="num">3</div><div>Ceritakan hasil pengamatan kepada teman. Jelaskan alasanmu memilih jenis gaya tersebut.</div></div>
+ <div class="callout"><b>Refleksi:</b> “Hari ini saya belajar bahwa gaya dapat ….” Lengkapi kalimat ini secara lisan atau tulis di buku.</div>
+ <p><b>Catatan keselamatan:</b> Lakukan pengamatan sederhana saja. Jangan menggunakan stopkontak, alat listrik terbuka, benda tajam, atau benda berat.</p>
+ <button onclick="window.print()">Cetak ringkasan pembelajaran</button>
+</section>
+<footer>Media Pembelajaran Interaktif • IPA Kelas 4 • Materi Gaya</footer>
+</main>
+<script>
+function warm(n){const f=document.getElementById('warmFeedback');f.className='feedback show '+(n===1?'ok':'no');f.textContent=n===1?'Benar! Gaya adalah tarikan atau dorongan yang dapat memengaruhi gerak atau bentuk benda.':'Belum tepat. Ingat, gaya merupakan tarikan atau dorongan. Coba pilih lagi!';}
+function reveal(id){const e=document.getElementById(id);e.classList.toggle('show');e.classList.add('ok');}
+const games=[
+ {q:'Raka mendorong meja di kelas.',a:'Gaya otot',why:'Otot tangan Raka memberikan dorongan pada meja.'},
+ {q:'Buah mangga jatuh dari pohon.',a:'Gaya gravitasi',why:'Bumi menarik buah ke arah permukaan bumi.'},
+ {q:'Magnet menarik klip kertas dari besi.',a:'Gaya magnet',why:'Magnet dapat menarik benda tertentu, seperti besi.'},
+ {q:'Rem sepeda membuat roda melambat.',a:'Gaya gesek',why:'Gesekan pada rem membantu memperlambat putaran roda.'}
+];
+const types=['Gaya otot','Gaya magnet','Gaya gravitasi','Gaya gesek','Gaya pegas','Gaya listrik'];let gi=0,gs=0,gLocked=false;
+function renderGame(){gLocked=false;document.getElementById('gameFeedback').className='feedback';document.getElementById('nextGame').style.display='none';document.getElementById('gameArea').innerHTML=`<p class="question">${gi+1}. ${games[gi].q}</p><div class="options">${types.map(t=>`<button onclick="answerGame('${t}')">${t}</button>`).join('')}</div>`;document.getElementById('gameScore').textContent=`Skor: ${gs} / 4`;document.getElementById('gameProgress').style.width=(gi/4*100)+'%';}
+function answerGame(t){if(gLocked)return;gLocked=true;let ok=t===games[gi].a;if(ok)gs++;let f=document.getElementById('gameFeedback');f.className='feedback show '+(ok?'ok':'no');f.textContent=(ok?'Tepat! ':'Belum tepat. Jawaban yang benar: '+games[gi].a+'. ')+games[gi].why;document.getElementById('gameScore').textContent=`Skor: ${gs} / 4`;document.getElementById('gameProgress').style.width=((gi+1)/4*100)+'%';document.getElementById('nextGame').style.display='inline-block';document.getElementById('nextGame').textContent=gi===3?'Lihat hasil':'Peristiwa berikutnya →';}
+function nextGame(){if(gi<3){gi++;renderGame()}else{document.getElementById('gameArea').innerHTML='<h3>Permainan selesai! 🎉</h3><p>Kamu memperoleh '+gs+' dari 4 poin. Sebutkan satu contoh gaya lain yang kamu temukan di sekolah.</p>';document.getElementById('nextGame').style.display='none';}}
+renderGame();
+const qs=[
+ {q:'Siti menarik kursi agar lebih dekat ke meja. Jenis gaya yang digunakan adalah …',o:['Gaya magnet','Gaya otot','Gaya gravitasi'],a:1,w:'Benar, Siti menggunakan tenaga otot untuk menarik kursi.'},
+ {q:'Bola yang dilempar ke atas akhirnya kembali jatuh. Peristiwa ini terjadi karena …',o:['Gaya pegas','Gaya gesek','Gaya gravitasi'],a:2,w:'Gravitasi bumi menarik bola kembali ke arah bumi.'},
+ {q:'Klip kertas menempel pada magnet. Ini merupakan contoh …',o:['Gaya magnet','Gaya otot','Gaya listrik'],a:0,w:'Magnet menarik benda tertentu yang mengandung bahan seperti besi.'},
+ {q:'Sepeda melambat ketika rem ditekan. Gaya yang berperan adalah …',o:['Gaya pegas','Gaya gesek','Gaya gravitasi'],a:1,w:'Gesekan pada sistem rem membantu mengurangi kecepatan roda.'},
+ {q:'Penggaris plastik yang digosok rambut dapat menarik potongan kertas kecil. Ini contoh …',o:['Gaya listrik','Gaya otot','Gaya magnet'],a:0,w:'Muatan listrik statis pada penggaris dapat menarik potongan kertas.'}
+];let qi=0,score=0,locked=false;
+function renderQuiz(){locked=false;document.getElementById('quizFeedback').className='feedback';document.getElementById('nextQuiz').style.display='none';document.getElementById('quizResult').style.display='none';document.getElementById('quizCount').textContent=`Soal ${qi+1} dari 5`;document.getElementById('quizProgress').style.width=(qi/5*100)+'%';document.getElementById('quizArea').innerHTML=`<p class="question">${qs[qi].q}</p><div class="options">${qs[qi].o.map((x,i)=>`<button onclick="answerQuiz(${i})">${String.fromCharCode(65+i)}. ${x}</button>`).join('')}</div>`;}
+function answerQuiz(n){if(locked)return;locked=true;let ok=n===qs[qi].a;if(ok)score++;let f=document.getElementById('quizFeedback');f.className='feedback show '+(ok?'ok':'no');f.textContent=(ok?'Benar! ':'Belum tepat. Jawaban yang benar: '+qs[qi].o[qs[qi].a]+'. ')+qs[qi].w;document.getElementById('quizProgress').style.width=((qi+1)/5*100)+'%';document.getElementById('nextQuiz').style.display='inline-block';document.getElementById('nextQuiz').textContent=qi===4?'Lihat nilai':'Soal berikutnya →';}
+function nextQuiz(){if(qi<4){qi++;renderQuiz()}else{document.getElementById('quizArea').innerHTML='';document.getElementById('nextQuiz').style.display='none';let r=document.getElementById('quizResult');r.style.display='block';r.innerHTML=`<h3>Hasil belajarmu 🌟</h3><p class="score">${score} dari 5 jawaban benar</p><p>${score>=4?'Hebat! Kamu sudah memahami berbagai jenis gaya.':score>=3?'Bagus! Pelajari kembali kartu materi yang masih membingungkan.':'Terus berlatih! Baca kembali enam jenis gaya, lalu coba lagi bersama guru.'}</p><button onclick="qi=0;score=0;renderQuiz()">Ulangi kuis</button>`;}}
+renderQuiz();
+</script>
+</body>
+</html>
